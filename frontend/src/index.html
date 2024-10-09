@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interface gestion finance</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h3>ajouter une dépense : </h3>
+        </div>
+       <form id="depenseForm" class="form-depenses">
+            <div>
+                <label for="categorieDepense">Catégorie : </label>
+                <input type="text" name="categorie" id="categorieDepense" required>
+            </div>
+            <div>
+                <label for="montantDepense">Depense : </label>
+                <input type="number" name="montant" id="montantDepense" required step="0.01">
+            </div>
+            <div>
+                <label for="dateDepense">Date : </label>
+                <input type="date" name="date" id="dateDepense" required>
+            </div>
+            <div>
+                <input type="submit" value="Soumettre">
+            </div>
+       </form>
+    </section>
+    <script src="form.js"></script>
+</body>
+</html>
